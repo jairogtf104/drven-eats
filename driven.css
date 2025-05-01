@@ -26,8 +26,8 @@
     }
     button.escolhido{
         background-color: #008000;
-        border-color: #008000;
         color: #ffffff;
+        border: #008000;
     }
     .texto1 > h1{
         font-size: 25px;

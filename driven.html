@@ -18,15 +18,14 @@
         </div>
         <div class="comida">
           <div class="escolhido"></div>
-          <button class="prato1"
-           onclick="seleciona(this)">
+          <button class="prato1"onclick="selecionaprato(this)">
             <img src="pf_calabresa.png">
             <h1>calabresa</h1>
             <p>Macaxeira,</p> 
             <p>arroz e feijão</p>
             <h2>14,90</h2>
           </button>
-          <button class="prato2" onclick="seleciona(this)">
+          <button class="prato2" onclick="selecionaprato(this)">
             <img src="pf_carne.jpg">
               <h1>carne</h1>
               <p>Um pouco de batata,</p> 
@@ -34,7 +33,7 @@
               <p>ovo e salada</p>
               <h2>15,50</h2>
           </button>
-          <button class="prato3" onclick="seleciona(this)">
+          <button class="prato3" onclick="selecionaprato(this)">
             <img src="pf_frango.jpg">
               <h1>Frango</h1>
               <p>Um pouco de salada,</p> 
@@ -46,47 +45,47 @@
           <h1>Agora, sua bebida</h1>
         </div>
         <div class="bebida">
-          <div class="bebida-coca" onclick="alert('ola')"> 
+          <button class="bebida-coca" onclick="selecionabebida(this)"> 
             <img src="coca.png">
             <h1>coca</h1>
             <p>Lata 350ml</p> 
             <h2>5,00</h2>
-          </div>
-          <div class="bebida-fanta">
+          </button>
+          <button class="bebida-fanta"onclick="selecionabebida(this)">
             <img src="fanta.png">
             <h1>fanta</h1>
             <p>Lata 350ml</p> 
             <h2>4,50</h2>
-          </div>
-          <div class="bebida-fanta">
+          </button>
+          <button class="bebida-fanta"onclick="selecionabebida(this)">
             <img src="suco.png">
             <h1>suco</h1>
             <p>Copo 200ml</p> 
             <h2>3,90</h2>
-          </div>
+          </button>
         </div>
         <div class="texto3">
           <h1>Por fim , sobremesa</h1>
         </div>
         <div class="sobremesa">
-          <div class="sobremesa-pudim">
+          <button class="sobremesa-pudim" onclick="selecionasobremesa(this)">
             <img src="pudim.jpg">
             <h1>Pudim</h1>
             <p>Apenas pudim</p> 
             <h2>5,50</h2>
-          </div>
-          <div class="sobremesa-brownie">
+          </button>
+          <button class="sobremesa-brownie" onclick="selecionasobremesa(this)">
             <img src="brownie.jpg">
             <h1>Brownie</h1>
             <p>Apenas brownie</p> 
             <h2>3,00</h2>
-          </div>
-          <div class="sobremesa-mouse">
+          </button>
+          <button class="sobremesa-mouse" onclick="selecionasobremesa(this)">
             <img src="mouse.jpg">
             <h1>Mouse</h1>
             <p>Apenas mouse</p> 
             <h2>2,90</h2>
-          </div>
+          </button>
         </div>
         <button  class="menu">Selecione os 3 itens
            para fechar o pedido</button>
