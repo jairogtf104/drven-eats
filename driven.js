@@ -1,3 +1,3 @@
 function seleciona(button){
-    button.classlist.add(escolhido);
+    button.classList.add("escolhido");
 }
