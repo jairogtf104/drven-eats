@@ -1,4 +1,3 @@
-function seleciona(){
-    const botao = document.querySelector(".prato1");
-    botao.classlist.add(escolhido);
+function seleciona(button){
+    button.classlist.add(escolhido);
 }

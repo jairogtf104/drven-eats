@@ -28,6 +28,12 @@
         background-color: #008000;
         color: #ffffff;
     }
+    .escolhido{
+        background-color: #008000;
+        color: #ffffff;
+        border-color: #008000;
+        
+    }
     .texto1 > h1{
         font-size: 25px;
         margin-top: 80px;
