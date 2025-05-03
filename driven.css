@@ -25,9 +25,7 @@
         border: none;
     }
     button.escolhido{
-        background-color: #008000;
-        color: #ffffff;
-        border: #008000;
+        border: 4px solid rgb(2, 176, 2);
     }
     .texto1 > h1{
         font-size: 25px;
@@ -259,10 +257,11 @@
         margin-left: 20px;
         font-size: 20px;
     }
-    .cancelar{
-
-    }
     .esconder{
         display: none;
+    }
+
+    .fechar-pedido{
+        background-color:#008000;
     }
 }

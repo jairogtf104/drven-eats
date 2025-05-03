@@ -1,4 +1,12 @@
+let pratoEscolhido = "";
+
+let bebidaEscolhida = "";
+
+let sobreEscolhida = "";
+
 function selecionaprato(button){
+
+    pratoEscolhido = button.innerHTML;
 
     const parent = button.parentElement;
 
@@ -12,6 +20,8 @@ function selecionaprato(button){
 
 function selecionabebida(button){
 
+    bebidaEscolhida = button.innerHTML;
+
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -24,6 +34,8 @@ function selecionabebida(button){
 
 function selecionasobremesa(button){
 
+    sobreEscolhida = button.innerHTML;
+
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -32,4 +44,20 @@ function selecionasobremesa(button){
 
     button.classList.add("escolhido");
     
+}
+
+function intensSelecionados(){
+
+    if( pratoEscolhido !== ""){
+
+        if(bebidaEscolhida !== ""){
+
+            if(sobreEscolhida !== ""){
+
+               document.querySelector("menu");
+               const texto = "fechar pedido";
+            }
+        }
+    }
+
 }
