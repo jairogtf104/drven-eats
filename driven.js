@@ -54,10 +54,13 @@ function intensSelecionados(){
 
             if(sobreEscolhida !== ""){
 
-               document.querySelector("menu");
+               document.querySelector("menu").classList.add(".fechar-pedido");
                const texto = "fechar pedido";
+
             }
+
         }
+        
     }
 
 }
