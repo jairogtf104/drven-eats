@@ -25,7 +25,7 @@
         border: none;
     }
     button.escolhido{
-        border: 4px solid rgb(2, 176, 2);
+        border: 4px solid #02b002;
     }
     .texto1 > h1{
         font-size: 25px;
@@ -47,6 +47,7 @@
         box-shadow: 2px 2px 2px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .prato1 > h1{
         color: #080808;
@@ -69,6 +70,7 @@
         box-shadow: 2px 2px 2px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .prato2 > p{
         color: #A6A6A6;
@@ -86,6 +88,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;   
     }
     .prato3 > p{
         color: #A6A6A6;
@@ -114,6 +117,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .bebida-coca > p{
         color: #A6A6A6;
@@ -131,6 +135,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .bebida-fanta > p{
         color: #A6A6A6;
@@ -148,6 +153,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4; 
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .bebida-suco > p{
         color: #A6A6A6;
@@ -177,6 +183,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .sobremesa-pudim > p{
         color: #A6A6A6;
@@ -194,6 +201,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .sobremesa-brownie > p{
         color: #A6A6A6;
@@ -211,6 +219,7 @@
         box-shadow: 1px 1px 1px 1px #f4f4f4;
         margin-left: 20px;
         border-radius: 10px;
+        border: 4px solid #fdfdfd;
     }
     .sobremesa-mouse > p{
         color: #A6A6A6;
@@ -226,8 +235,7 @@
         align-items: center;
         border-radius: 50px;
         height: 40px;
-        width: 50%;
-        margin-left: 20px;
+        width: 100%;
         margin-top: 10px;
         justify-content: center;
         align-items: center;
@@ -261,7 +269,9 @@
         display: none;
     }
 
-    .fechar-pedido{
+    .fecharPedido{
         background-color:#008000;
+        color:#ffffff
+        
     }
 }

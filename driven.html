@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Driven Eats</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="driven.css">
@@ -87,10 +87,12 @@
             <h2>2,90</h2>
           </button>
         </div>
-        <button  class="menu " onclick="intensSelecionados(this)">Selecione os 3 itens
+        <button  class="menu" onclick="pedido(this)">Selecione os 3 itens
            para fechar o pedido
         </button>
-        <div class="fechar-pedido"></div>
+        <div class="fecharPedido esconder">
+          <p>fechar pedido</p>
+        </div>
         <div class="esconder"></div>
         <div class="pedido esconder">
           <h1>Confirme seu pedido</h1>
@@ -102,5 +104,6 @@
           <button class="cancelar">Cancelar</button>
         </div>
     </div>
+    <script src="driven.js"></script>
   </body>
 </html>

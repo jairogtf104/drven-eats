@@ -1,8 +1,8 @@
-let pratoEscolhido = "";
+let pratoEscolhido ="";
 
-let bebidaEscolhida = "";
+let bebidaEscolhida ="";
 
-let sobreEscolhida = "";
+let sobreEscolhida ="";
 
 function selecionaprato(button){
 
@@ -46,7 +46,7 @@ function selecionasobremesa(button){
     
 }
 
-function intensSelecionados(){
+function pedido(){
 
     if( pratoEscolhido !== ""){
 
@@ -54,8 +54,9 @@ function intensSelecionados(){
 
             if(sobreEscolhida !== ""){
 
-               document.querySelector("menu").classList.add(".fechar-pedido");
-               const texto = "fechar pedido";
+                menu.classList.add("esconder");
+                
+                fecharPedido.classList.remove("esconder");
 
             }
 
