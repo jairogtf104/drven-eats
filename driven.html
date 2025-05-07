@@ -5,7 +5,6 @@
     <title>Driven Eats</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="driven.css">
-    <script src="driven.js"></script>
   </head>
   <body>
     <div class="pagina">
@@ -87,12 +86,13 @@
             <h2>2,90</h2>
           </button>
         </div>
-        <button  class="menu" onclick="pedido(this)">Selecione os 3 itens
-           para fechar o pedido
-        </button>
-        <div class="fecharPedido esconder">
+        <button class="fecharPedido esconder">
           <p>fechar pedido</p>
-        </div>
+        </button>
+        <button  class="menu" onclick="pedido(this)">
+          <p>Selecione os 3 itens</p>
+           <p>para fechar o pedido</p>
+        </button>
         <div class="esconder"></div>
         <div class="pedido esconder">
           <h1>Confirme seu pedido</h1>

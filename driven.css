@@ -231,6 +231,7 @@
     .menu{
         background-color: #b0afaf;
         color: #ffffff;
+        font-size: 15px;
         justify-content: center;
         align-items: center;
         border-radius: 50px;
@@ -270,8 +271,19 @@
     }
 
     .fecharPedido{
-        background-color:#008000;
-        color:#ffffff
+        background-color: #066602;
+        color: #ffffff;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        height: 40px;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
         
     }
 }
