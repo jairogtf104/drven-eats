@@ -4,6 +4,8 @@ let bebidaEscolhida ="";
 
 let sobreEscolhida ="";
 
+const Pedido ="";
+
 function selecionaprato(button){
 
     pratoEscolhido = button.innerHTML;
@@ -15,6 +17,8 @@ function selecionaprato(button){
     botoes.forEach(item => item.classList.remove("escolhido"));
 
     button.classList.add("escolhido");
+
+    pedido();
 
 }
 
@@ -29,6 +33,9 @@ function selecionabebida(button){
     botoes.forEach(item => item.classList.remove("escolhido"));
 
     button.classList.add("escolhido");
+
+    pedido();
+
     
 }
 
@@ -44,7 +51,11 @@ function selecionasobremesa(button){
 
     button.classList.add("escolhido");
     
+    pedido();
+
 }
+
+
 
 function pedido(){
 
@@ -53,6 +64,10 @@ function pedido(){
         if(bebidaEscolhida !== ""){
 
             if(sobreEscolhida !== ""){
+                
+               const menu = document.querySelector(".menu");
+
+               const fecharPedido = document.querySelector(".fecharPedido");
 
                 menu.classList.add("esconder");
                 
@@ -65,3 +80,14 @@ function pedido(){
     }
 
 }
+function confirmarPedido(){
+
+    let ped = document.querySelector("fecharpedido");
+
+    if( ped !== ""){
+
+        pedido.classList.remove("esconder");
+
+    }
+}
+

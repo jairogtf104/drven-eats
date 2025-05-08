@@ -86,23 +86,25 @@
             <h2>2,90</h2>
           </button>
         </div>
-        <button class="fecharPedido esconder">
+        <button class="fecharPedido esconder " onclick="confirmarPedido(this)">
           <p>fechar pedido</p>
         </button>
         <button  class="menu" onclick="pedido(this)">
           <p>Selecione os 3 itens</p>
-           <p>para fechar o pedido</p>
+          <p>para fechar o pedido</p>
         </button>
         <div class="esconder"></div>
-        <div class="pedido esconder">
+        <button class="pedido esconder">
           <h1>Confirme seu pedido</h1>
           <p>Frango Yin Yang: 14.90</p>
           <p>Frango Yin Yang: 14.90</p>
           <p>Pudim: 7.90</p>
           <p>TOTAL: 27.70</p>
           <div class="confirmar">Tudo certo, pode pedir!</div>
-          <button class="cancelar">Cancelar</button>
-        </div>
+          <button class="cancelar">
+            <p>Cancelar</p>
+          </button>
+        </button>
     </div>
     <script src="driven.js"></script>
   </body>
