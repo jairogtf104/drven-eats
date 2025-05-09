@@ -4,8 +4,6 @@ let bebidaEscolhida ="";
 
 let sobreEscolhida ="";
 
-const Pedido ="";
-
 function selecionaprato(button){
 
     pratoEscolhido = button.innerHTML;
@@ -79,15 +77,24 @@ function pedido(){
         
     }
 
-}
-function confirmarPedido(){
+    return fecharPedido;
 
-    let ped = document.querySelector("fecharpedido");
+}
+function selecionaPedido(){
+
+    let ped = document.querySelector(".pedido");
+
+    const menu = document.querySelector(".menu");
+
+    const fecharPedido = document.querySelector(".fecharPedido");
 
     if( ped !== ""){
 
-        pedido.classList.remove("esconder");
+        ped.classList.remove("esconder");
+        
+        fecharPedido.classList.add("esconder");
 
     }
+
 }
 
