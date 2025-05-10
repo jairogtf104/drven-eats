@@ -4,6 +4,26 @@ let bebidaEscolhida ="";
 
 let sobreEscolhida ="";
 
+const preco1 = 14.99875 ;
+
+const preco2 = 17.48975 ;
+
+const preco3 = 20.89850 ;
+
+const coca = 4.99875 ;
+
+const fanta = 4.48975 ;
+
+const suco = 5.99850 ;
+
+const pudim = 2.99875 ;
+
+const brownie = 3.48975 ;
+
+const mouse = 4.89850 ;
+
+const casas = 2;
+
 function selecionaprato(button){
 
     pratoEscolhido = button.innerHTML;
@@ -52,8 +72,6 @@ function selecionasobremesa(button){
     pedido();
 
 }
-
-
 
 function pedido(){
 
@@ -105,7 +123,7 @@ function selecionaFecharPedido(){
 
 function cancelaPedido(){
 
-    let cancelar = document.querySelector(".cancela");
+    let cancelar = document.querySelector(".cancelar");
 
     const pedido = document.querySelector(".pedido");
 
@@ -113,8 +131,17 @@ function cancelaPedido(){
 
         pedido.classList.add("esconder");
 
-        pagina.classList.add("pagina-cor");
-
     }
+
 }
 
+function confirmarPedido(){
+
+    if( pratoEscolhido !== ""){
+
+                
+                const texto1 = 'prato escolhido ${pratoEscolhido}';
+
+                document.querySelector(".pedido").innerHTML = texto1;
+            }
+}
