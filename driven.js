@@ -77,10 +77,8 @@ function pedido(){
         
     }
 
-    return fecharPedido;
-
 }
-function selecionaPedido(){
+function escolhido(){
 
     let ped = document.querySelector(".pedido");
 
@@ -96,5 +94,27 @@ function selecionaPedido(){
 
     }
 
+}
+
+function selecionaFecharPedido(){
+
+    escolhido();
+
+    pedido();
+}
+
+function cancelaPedido(){
+
+    let cancelar = document.querySelector(".cancela");
+
+    const pedido = document.querySelector(".pedido");
+
+    if(cancelar !== ""){
+
+        pedido.classList.add("esconder");
+
+        pagina.classList.add("pagina-cor");
+
+    }
 }
 

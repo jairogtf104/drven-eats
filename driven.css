@@ -286,4 +286,19 @@
         bottom: 0px;
         
     }
+
+    .confirmar{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    button.cancelar{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pagina-cor{
+        background-color: #EEEEEE;
+    }
+    
 }
