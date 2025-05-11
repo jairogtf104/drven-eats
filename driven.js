@@ -135,13 +135,42 @@ function cancelaPedido(){
 
 }
 
-function confirmarPedido(){
+function confirmarPedido(button){
+
+    pratoEscolhido = button.innerHTML;
+
+    bebidaEscolhida = button.innerHTML;
+
+    sobreEscolhida = button.innerHTML;
 
     if( pratoEscolhido !== ""){
 
-                
-                const texto1 = 'prato escolhido ${pratoEscolhido}';
+        if(bebidaEscolhida !== ""){
 
-                document.querySelector(".pedido").innerHTML = texto1;
+            if(sobreEscolhida !== ""){
+                
+                const  pedPrato = 'prato ${pratoEscolhido} escolhido ';
+
+                const  pedBebida = 'prato ${bebidaEscolhido} escolhido ';
+
+                const  pedSobre = 'prato ${sobreEscolhido} escolhido ';
+
+                document.querySelector(".fecharPedido").innerHTML = pedPrato;
+
+                document.querySelector(".fecharPedido").innerHTML = pedBebida;
+
+                document.querySelector(".fecharPedido").innerHTML = pedSobre;
             }
+
+        }
+        
+    }
+    
+}
+
+function chamaFuncao(){
+
+    selecionaFecharPedido();
+
+    confirmarPedido();
 }
