@@ -149,7 +149,7 @@ function confirmarPedido(button){
 
             if(sobreEscolhida !== ""){
                 
-                const  pedPrato = 'prato ${pratoEscolhido} escolhido ';
+                const  pedPrato = '${pratoEscolhido}';
 
                 const  pedBebida = 'prato ${bebidaEscolhido} escolhido ';
 
