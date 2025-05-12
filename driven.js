@@ -151,15 +151,15 @@ function confirmarPedido(button){
                 
                 const  pedPrato = '${pratoEscolhido}';
 
-                const  pedBebida = 'prato ${bebidaEscolhido} escolhido ';
+                const  pedBebida = '${bebidaEscolhido}';
 
-                const  pedSobre = 'prato ${sobreEscolhido} escolhido ';
+                const  pedSobre = '${sobreEscolhido}';
 
-                document.querySelector(".fecharPedido").innerHTML = pedPrato;
+                document.querySelector(".fecharPedido") = pedPrato;
 
-                document.querySelector(".fecharPedido").innerHTML = pedBebida;
+                document.querySelector(".fecharPedido") = pedBebida;
 
-                document.querySelector(".fecharPedido").innerHTML = pedSobre;
+                document.querySelector(".fecharPedido") = pedSobre;
             }
 
         }
