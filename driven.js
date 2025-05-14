@@ -4,26 +4,6 @@ let bebidaEscolhida ="";
 
 let sobreEscolhida ="";
 
-const preco1 = 14.99875 ;
-
-const preco2 = 17.48975 ;
-
-const preco3 = 20.89850 ;
-
-const coca = 4.99875 ;
-
-const fanta = 4.48975 ;
-
-const suco = 5.99850 ;
-
-const pudim = 2.99875 ;
-
-const brownie = 3.48975 ;
-
-const mouse = 4.89850 ;
-
-const casas = 2;
-
 function selecionaprato(button){
 
     pratoEscolhido = button.innerHTML;
@@ -137,29 +117,30 @@ function cancelaPedido(){
 
 function confirmarPedido(button){
 
-    pratoEscolhido = button.innerHTML;
+    pratoEscolhido = button.classList.add("escolhido");
 
-    bebidaEscolhida = button.innerHTML;
+    bebidaEscolhida = button.classList.add("escolhido");
 
-    sobreEscolhida = button.innerHTML;
+    sobreEscolhida = button.classList.add("escolhido");
+
+    pedPrato = document.querySelector('h1');
+
+    pedBebida = document.querySelector('h1');
+
+    pedSobre = document.querySelector('h1');
 
     if( pratoEscolhido !== ""){
 
         if(bebidaEscolhida !== ""){
 
             if(sobreEscolhida !== ""){
-                
-                const  pedPrato = '${pratoEscolhido}';
 
-                const  pedBebida = '${bebidaEscolhido}';
+                pratoEscolhido = document.querySelector('h1');
 
-                const  pedSobre = '${sobreEscolhido}';
+                bebidaEscolhida = document.querySelector('h1');
 
-                document.querySelector(".fecharPedido") = pedPrato;
+                sobreEscolhida = document.querySelector('h1');
 
-                document.querySelector(".fecharPedido") = pedBebida;
-
-                document.querySelector(".fecharPedido") = pedSobre;
             }
 
         }
