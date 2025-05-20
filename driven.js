@@ -140,11 +140,11 @@ function cancelaPedido(){
 
 function confirmarPedido(){
 
-   /* let pedidoPronto1 = document.querySelector(".pedido");
+    let pedidoPronto1 = document.querySelector(".pedido");
 
     let pedidoPronto2 = document.querySelector(".pedido");
 
-    let pedidoPronto3 = document.querySelector(".pedido");*/
+    let pedidoPronto3 = document.querySelector(".pedido");
 
     if( pratoEscolhido !== ""){
 
