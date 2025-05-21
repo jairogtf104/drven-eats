@@ -146,8 +146,6 @@ function confirmarPedido(){
         }
 
     }
-
-    chamaFuncao();
     
 }
 
