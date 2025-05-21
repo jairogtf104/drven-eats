@@ -4,30 +4,18 @@ let bebidaEscolhida ="";
 
 let sobreEscolhida ="";
 
-const preco1 = 14.99875 ;
+let pedPrato ="";
 
-const preco2 = 17.48975 ;
+let pedBebida ="";
 
-const preco3 = 20.89850 ;
+let pedSobre ="";
 
-const coca = 4.99875 ;
-
-const fanta = 4.48975 ;
-
-const suco = 5.99850 ;
-
-const pudim = 2.99875 ;
-
-const brownie = 3.48975 ;
-
-const mouse = 4.89850 ;
-
-const casas = 2;
+let ped = "";
 
 function selecionaprato(button){
 
     pratoEscolhido = button.innerHTML;
-
+    
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -53,8 +41,6 @@ function selecionabebida(button){
     button.classList.add("escolhido");
 
     pedido();
-
-    
 }
 
 function selecionasobremesa(button){
@@ -98,13 +84,13 @@ function pedido(){
 }
 function escolhido(){
 
-    let ped = document.querySelector(".pedido");
+    ped = document.querySelector(".pedido");
 
     const menu = document.querySelector(".menu");
 
     const fecharPedido = document.querySelector(".fecharPedido");
 
-    if( ped !== ""){
+    if( ped ){
 
         ped.classList.remove("esconder");
         
@@ -127,7 +113,7 @@ function cancelaPedido(){
 
     const pedido = document.querySelector(".pedido");
 
-    if(cancelar !== ""){
+    if(cancelar){
 
         pedido.classList.add("esconder");
 
@@ -135,35 +121,30 @@ function cancelaPedido(){
 
 }
 
-function confirmarPedido(button){
-
-    pratoEscolhido = button.innerHTML;
-
-    bebidaEscolhida = button.innerHTML;
-
-    sobreEscolhida = button.innerHTML;
+function confirmarPedido(){
 
     if( pratoEscolhido !== ""){
 
-        if(bebidaEscolhida !== ""){
+        if( bebidaEscolhida !== ""){
 
             if(sobreEscolhida !== ""){
-                
-                const  pedPrato = '${pratoEscolhido}';
 
-                const  pedBebida = '${bebidaEscolhido}';
+                let prato = document.querySelector(".comida .escolhido");
 
-                const  pedSobre = '${sobreEscolhido}';
+                let bebida = document.querySelector(".bebida .escolhido");
 
-                document.querySelector(".fecharPedido") = pedPrato;
+                let sobremesa = document.querySelector(".sobremesa .escolhido");
+        
+                pedPrato = prato.querySelector("h1").innerText;
 
-                document.querySelector(".fecharPedido") = pedBebida;
+                pedBebida = bebida.querySelector("h1").innerText;
 
-                document.querySelector(".fecharPedido") = pedSobre;
+                pedSobre = sobremesa.querySelector("h1").innerText;
+
             }
 
         }
-        
+
     }
     
 }
