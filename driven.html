@@ -23,7 +23,7 @@
         </div>
         <div class="comida">
           <div class="escolhido"></div>
-          <button class="prato1"onclick="selecionaprato(this)">
+          <button class="prato1" onclick="selecionaprato(this)">
             <img src="pf_calabresa.png">
             <h1>calabresa</h1>
             <p>Macaxeira,</p> 
@@ -42,7 +42,7 @@
             <img src="pf_frango.jpg">
               <h1>Frango</h1>
               <p>Um pouco de salada,</p> 
-              <p>feijão e arroz</p>
+             <p>feijão e arroz</p>
               <h2>17,00</h2>
           </button>
         </div>
@@ -56,13 +56,13 @@
             <p>Lata 350ml</p> 
             <h2>5,00</h2>
           </button>
-          <button class="bebida-fanta"onclick="selecionabebida(this)">
+          <button class="bebida-fanta" onclick="selecionabebida(this)">
             <img src="fanta.png">
             <h1>fanta</h1>
             <p>Lata 350ml</p> 
             <h2>4,50</h2>
           </button>
-          <button class="bebida-suco"onclick="selecionabebida(this)">
+          <button class="bebida-suco"  onclick="selecionabebida(this)">
             <img src="suco.png">
             <h1>suco</h1>
             <p>Copo 200ml</p> 
@@ -73,34 +73,34 @@
           <h1>Por fim , sobremesa</h1>
         </div>
         <div class="sobremesa">
-          <button class="sobremesa-pudim" onclick="selecionasobremesa(this)">
+          <button class="sobremesa-pudim"  onclick="selecionasobremesa(this)">
             <img src="pudim.jpg">
             <h1>Pudim</h1>
             <p>Apenas pudim</p> 
             <h2>5,50</h2>
           </button>
-          <button class="sobremesa-brownie" onclick="selecionasobremesa(this)">
+          <button class="sobremesa-brownie"  onclick="selecionasobremesa(this)">
             <img src="brownie.jpg">
             <h1>Brownie</h1>
             <p>Apenas brownie</p> 
             <h2>3,00</h2>
           </button>
-          <button class="sobremesa-mouse" onclick="selecionasobremesa(this)">
+          <button class="sobremesa-mouse"  onclick="selecionasobremesa(this)">
             <img src="mouse.jpg">
             <h1>Mouse</h1>
             <p>Apenas mouse</p> 
             <h2>2,90</h2>
           </button>
         </div>
-        <button class="fecharPedido esconder" onclick="chamaFuncao()">
+        <button class="fecharPedido esconder" onclick="selecionaFecharPedido()">
           <p>fechar pedido</p>
         </button>
-        <button  class="menu" onclick="pedido(this)">
+        <button  class="menu">
           <p>Selecione os 3 itens</p>
           <p>para fechar o pedido</p>
         </button>
         <div class="esconder"></div>
-        <div class="pedido esconder">
+        <div class="pedido esconder" onclick="chamaFuncao()">
           <h1>Confirme seu pedido</h1>
           <div class="confirmar">Tudo certo, pode pedir!</div>
           <button class="cancelar" onclick="cancelaPedido()">
