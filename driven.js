@@ -138,6 +138,9 @@ function confirmarPedido(){
 
                 pedSobre = sobremesa.querySelector("h1").innerText;
 
+                console.log(pedPrato);
+                console.log(pedBebida);
+                console.log(pedSobre);
             }
 
         }
