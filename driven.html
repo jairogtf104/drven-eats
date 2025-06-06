@@ -30,7 +30,7 @@
             <p>arroz e feijão</p>
             <h2>14,90</h2>
           </button>
-          <button class="prato2" onclick="selecionaprato(this)">
+          <button class="prato2" onclick="escolhePrato(this)">
             <img src="pf_carne.jpg">
               <h1>carne</h1>
               <p>Um pouco de batata,</p> 
@@ -38,7 +38,7 @@
               <p>ovo e salada</p>
               <h2>15,50</h2>
           </button>
-          <button class="prato3" onclick="selecionaprato(this)">
+          <button class="prato3" onclick="escolhePrato(this)">
             <img src="pf_frango.jpg">
               <h1>Frango</h1>
               <p>Um pouco de salada,</p> 
@@ -50,20 +50,20 @@
           <h1>Agora, sua bebida</h1>
         </div>
         <div class="bebida">
-          <button class="bebida-coca" onclick="selecionabebida(this)"> 
+          <button class="bebida-coca" onclick="escolheBebida(this)"> 
             <img src="coca.png">
             <h1>coca</h1>
             <p>Lata 350ml</p> 
             <h2>5,00</h2>
           </button>
           <button class="bebida-fanta" onclick="selecionabebida(this)">
-            <img src="fanta.png">
+             <img src="fanta.png">
             <h1>fanta</h1>
             <p>Lata 350ml</p> 
             <h2>4,50</h2>
           </button>
           <button class="bebida-suco"  onclick="selecionabebida(this)">
-            <img src="suco.png">
+             <img src="suco.png">
             <h1>suco</h1>
             <p>Copo 200ml</p> 
             <h2>3,90</h2>
@@ -73,8 +73,7 @@
           <h1>Por fim , sobremesa</h1>
         </div>
         <div class="sobremesa">
-          <button class="sobremesa-pudim"  onclick="selecionasobremesa(this)">
-            <img src="pudim.jpg">
+          <button class="sobremesa-pudim"  onclick="selecionasobremesa(this)"><img src="pudim.jpg">
             <h1>Pudim</h1>
             <p>Apenas pudim</p> 
             <h2>5,50</h2>
@@ -103,7 +102,7 @@
         <div class="pedido esconder" onclick="chamaFuncao()">
           <h1>Confirme seu pedido</h1>
           <div class="confirmar">Tudo certo, pode pedir!</div>
-          <button class="cancelar" onclick="cancelaPedido()">
+          <button class="cancelar">
             <p>Cancelar</p>
           </button>
         </div>
