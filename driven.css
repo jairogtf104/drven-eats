@@ -316,4 +316,16 @@
         background-color: #EEEEEE;
     }
     
+    .resumo{
+        background-color: red;
+        color: #f4f4f4;
+        height: 135px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 200px;
+        left: 200px;
+        width: 40%;
+        font-family: "Roboto", sans-serif;
+    }
 }

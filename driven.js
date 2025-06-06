@@ -12,6 +12,10 @@ let pedSobre ="";
 
 let ped = "";
 
+let fecharPedido = "";
+
+let fechaPedido = "";
+
 function selecionaprato(button){
     
     pratoEscolhido = button.innerHTML;
@@ -85,9 +89,11 @@ function escolhido(){
 
     const menu = document.querySelector(".menu");
 
-    const fecharPedido = document.querySelector(".fecharPedido");
+    fecharPedido = document.querySelector(".fecharPedido");
 
-    if( ped !== ""){
+    fechaPedido = document.querySelector(".fecharPedido");
+
+    if( fechaPedido !== ""){
 
         ped.classList.remove("esconder");
         
@@ -138,12 +144,25 @@ function confirmarPedido(){
 
                 pedSobre = sobremesa.querySelector("h1").innerText;
 
-                console.log(pedPrato);
-                console.log(pedBebida);
-                console.log(pedSobre);
             }
 
         }
+
+    }
+
+}
+
+function resumoPronto(){
+
+    let resumoPedido = document.querySelector(".resumo");
+
+    ped = document.querySelector(".pedido");
+
+    if( fechaPedido !== ""){
+
+        resumoPedido.classList.remove("esconder");
+        
+        Ped.classList.add("esconder");
 
     }
 
@@ -154,5 +173,7 @@ function chamaFuncao(){
     selecionaFecharPedido();
 
     confirmarPedido();
+
+    resumoPronto();
 
 }
