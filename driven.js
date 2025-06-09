@@ -10,6 +10,12 @@ let pedBebida ="";
 
 let pedSobre ="";
 
+let pratoPreco ="";
+
+let bebidaPreco ="";
+
+let sobremesaPreco ="";
+
 let ped = "";
 
 let fecharPedido = "";
@@ -37,8 +43,6 @@ function selecionabebida(button){
 
     bebidaEscolhida = button.classList.add("escolhido");
 
-    pedBebida = bebidaEscolhida.document.querySelector('h1').innertext;
-
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -55,7 +59,6 @@ function selecionasobremesa(button){
 
     sobreEscolhida = button.innerHTML;
     
-
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -131,6 +134,17 @@ function cancelaPedido(){
 
 function confirmarPedido(){
 
+    let pra = document.getElementById("prato");
+
+    let beb = document.getElementById("bebida");
+
+    let sob = document.getElementById("sobremesa");
+
+    let preco1 = document.getElementById("prato");
+
+    let preco2 = document.getElementById("bebida");
+
+    let preco3 = document.getElementById("sobremesa");
 
     if( pratoEscolhido !== ""){
 
@@ -150,25 +164,29 @@ function confirmarPedido(){
 
                 pedSobre = sobremesa.querySelector("h1").innerText;
 
+                pratoPreco = prato.querySelector("h2").innerText;
+
+                bebidaPreco = bebida.querySelector("h2").innerText;
+
+                sobremesaPreco = sobremesa.querySelector("h2").innerText;
+
+                pra.innerText = `prato: ${pedPrato}`;
+
+                beb.innerText = `bebida: ${pedBebida}`;
+
+                sob.innerText = `sobremesa: ${pedSobre}`;
+
+                preco1.innerText = `prato: ${pratoPreco}`;
+
+                preco2.innerText = `bebida: ${bebidaPreco}`;
+
+                preco3.innerText = `sobremesa: ${sobremesaPreco}`;
+
+                let total = (preco1 + preco2 + preco3);
+
             }
 
         }
-
-    }
-
-}
-
-function resumoPronto(){
-
-    let resumoPedido = document.querySelector(".resumo");
-
-    ped = document.querySelector(".pedido");
-
-    if( fechaPedido !== ""){
-
-        resumoPedido.classList.remove("esconder");
-        
-        Ped.classList.add("esconder");
 
     }
 
@@ -179,7 +197,5 @@ function chamaFuncao(){
     selecionaFecharPedido();
 
     confirmarPedido();
-
-    resumoPronto();
 
 }

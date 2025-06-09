@@ -265,9 +265,10 @@
         align-items: center;
         position: fixed;
         top: 200px;
-        left: 200px;
+        left: 150px;
         width: 40%;
         font-family: "Roboto", sans-serif;
+        font-size: 20px;
     }
     .pedido > h1{
         margin-bottom: 20px;
@@ -314,18 +315,5 @@
 
     .pagina-cor{
         background-color: #EEEEEE;
-    }
-    
-    .resumo{
-        background-color: red;
-        color: #f4f4f4;
-        height: 135px;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 200px;
-        left: 200px;
-        width: 40%;
-        font-family: "Roboto", sans-serif;
     }
 }
