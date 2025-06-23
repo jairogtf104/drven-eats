@@ -140,11 +140,11 @@ function confirmarPedido(){
 
     let sob = document.getElementById("sobremesa");
 
-    let preco1 = document.getElementById("prato");
+    let preco1 = document.getElementById("preco1");
 
-    let preco2 = document.getElementById("bebida");
+    let preco2 = document.getElementById("preco2");
 
-    let preco3 = document.getElementById("sobremesa");
+    let preco3 = document.getElementById("preco3");
 
     if( pratoEscolhido !== ""){
 
@@ -170,19 +170,21 @@ function confirmarPedido(){
 
                 sobremesaPreco = sobremesa.querySelector("h2").innerText;
 
-                pra.innerText = `prato: ${pedPrato}`;
+                preco1 = parseFloat(pratoPreco).toFixed(2);
 
-                beb.innerText = `bebida: ${pedBebida}`;
+                preco2 = parseFloat(bebidaPreco).toFixed(2);
 
-                sob.innerText = `sobremesa: ${pedSobre}`;
+                preco3 = parseFloat(sobremesaPreco).toFixed(2);
 
-                preco1.innerText = `prato: ${pratoPreco}`;
+                pra.innerText = `${pedPrato}: ${preco1}`;
 
-                preco2.innerText = `bebida: ${bebidaPreco}`;
+                beb.innerText = `${pedBebida}: ${preco2}`;
 
-                preco3.innerText = `sobremesa: ${sobremesaPreco}`;
+                sob.innerText = `${pedSobre}: ${preco3}`;
 
-                let total = (preco1 + preco2 + preco3);
+                let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
+
+                document.getElementById("total").innerText = `Total: R$ ${total.replace(".", ",")}`;
 
             }
 

@@ -60,7 +60,7 @@
              <img src="fanta.png">
             <h1>fanta</h1>
             <p>Lata 350ml</p> 
-            <h2>4,499</h2>
+            <h2>4,50</h2>
           </button>
           <button class="bebida-suco"  onclick="selecionabebida(this)">
              <img src="suco.png">
@@ -101,15 +101,12 @@
         <div class="esconder"></div>
         <div class="pedido esconder" onclick="chamaFuncao()">
           <h1>Confirme seu pedido</h1>
-          <p id = "prato"></p>
-          <p id = "bebida"></p>
-          <p id = "sobremesa"></p>
-          <p id = "preco1"></p>
-          <p id = "preco2"></p>
-          <p id = "preco3"></p>
+          <p id = "prato"></p> <p id = "preco1"></p>
+          <p id = "bebida"></p><p id = "preco2"></p>
+          <p id = "sobremesa"></p><p id = "preco3"></p>
           <p id = "total"></p>
           <div class="confirmar">Tudo certo, pode pedir!</div>
-          <button class="cancelar">
+          <button class="cancelar" onclick = "cancelaPedido()">
             <p>Cancelar</p>
           </button>
         </div>
