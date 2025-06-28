@@ -41,8 +41,6 @@ function selecionabebida(button){
 
     bebidaEscolhida = button.innerHTML;
 
-    bebidaEscolhida = button.classList.add("escolhido");
-
     const parent = button.parentElement;
 
     const botoes = parent.querySelectorAll("button, div");
@@ -78,9 +76,9 @@ function pedido(){
 
             if(sobreEscolhida !== ""){
                 
-               const menu = document.querySelector(".menu");
+                const menu = document.querySelector(".menu");
 
-               const fecharPedido = document.querySelector(".fecharPedido");
+                fecharPedido = document.querySelector(".fecharPedido");
 
                 menu.classList.add("esconder");
                 
@@ -101,7 +99,7 @@ function escolhido(){
 
     fechaPedido = document.querySelector(".fecharPedido");
 
-    if( fechaPedido !== ""){
+    if( fecharPedido !== ""){
 
         ped.classList.remove("esconder");
         
@@ -140,11 +138,11 @@ function confirmarPedido(){
 
     let sob = document.getElementById("sobremesa");
 
-    let preco1 = document.getElementById("preco1");
+    let preco1 = document.getElementById("1preco");
 
-    let preco2 = document.getElementById("preco2");
+    let preco2 = document.getElementById("2preco");
 
-    let preco3 = document.getElementById("preco3");
+    let preco3 = document.getElementById("3preco");
 
     if( pratoEscolhido !== ""){
 
