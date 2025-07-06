@@ -176,17 +176,15 @@ function confirmarPedido(){
 
                 let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
 
-                let envioDoPedido = `Ola, gostaria de fazer o pedido:`
+                let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
-                pra.innerText = `${pedPrato}: ${preco1}`;
+                pra.innerText = ${pedPrato}: ${preco1}
 
-                beb.innerText = `${pedBebida}: ${preco2}`;
+                beb.innerText = ${pedBebida}: ${preco2}
 
-                sob.innerText = `${pedSobre}: ${preco3}`;
+                sob.innerText = ${pedSobre}: ${preco3}
 
-               
-
-                document.getElementById("total").innerText = `Total: R$ ${total.replace(".", ",")}`;
+                document.getElementById("total").innerText = Total: R$ ${total.replace(".", ",")}`;
 
                 encodeURIComponent(envioDoPedido);
 
