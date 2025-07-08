@@ -188,6 +188,8 @@ function confirmarPedido(){
 
                 encodeURIComponent(envioDoPedido);
 
+                window.open(`https://wa.me/${5508487888275}?text=${envioDoPedido}`);
+
             }
 
         }
