@@ -316,4 +316,8 @@
     .pagina-cor{
         background-color: #EEEEEE;
     }
+    a {
+        text-decoration: none;
+        color: #EEEEEE;
+    }
 }

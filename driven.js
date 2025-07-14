@@ -178,17 +178,19 @@ function confirmarPedido(){
 
                 let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
-                pra.innerText = ${pedPrato}: ${preco1}
+                ${pedPrato}: ${preco1}
 
-                beb.innerText = ${pedBebida}: ${preco2}
+                ${pedBebida}: ${preco2}
 
-                sob.innerText = ${pedSobre}: ${preco3}
+                ${pedSobre}: ${preco3}
 
-                document.getElementById("total").innerText = Total: R$ ${total.replace(".", ",")}`;
+                Total: R$ ${total.replace(".", ",")}`;
 
                 encodeURIComponent(envioDoPedido);
 
-                window.open(`https://wa.me/${5508487888275}?text=${envioDoPedido}`);
+                window.open(`https://wa.me/${558487888273}?text=${envioDoPedido}`);
+
+                
 
             }
 
