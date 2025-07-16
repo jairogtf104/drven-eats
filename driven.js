@@ -180,17 +180,15 @@ function confirmarPedido(){
                 
                 ${pedPrato}: ${preco1}
 
-                ${pedBebida}: ${preco2}
+                ${pedBebida}:  ${preco2}
 
-                ${pedSobre}: ${preco3}
+                ${pedSobre}:  ${preco3}
 
                 Total: R$ ${total.replace(".", ",")}`;
 
-                encodeURIComponent(envioDoPedido);
+               let link =  encodeURIComponent(envioDoPedido);
 
-                window.open(`https://wa.me/${558487888273}?text=${envioDoPedido}`);
-
-                
+                window.open(`https://wa.me/${558487888273}?text=${link}`);
 
             }
 
