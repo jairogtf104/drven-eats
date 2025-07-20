@@ -176,6 +176,18 @@ function confirmarPedido(){
 
                 let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
 
+                document.getElementById("prato").innerText = pedPrato;
+
+                document.getElementById("bebida").innerText = pedBebida;
+
+                document.getElementById("sobremesa").innerText = pedSobre;
+
+                document.getElementById("1preco").innerText = preco1;
+
+                document.getElementById("2preco").innerText = preco2;
+
+                document.getElementById("3preco").innerText = preco3;
+
                 let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
                 ${pedPrato}: ${preco1}
