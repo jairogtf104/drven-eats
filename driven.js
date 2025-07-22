@@ -132,18 +132,6 @@ function cancelaPedido(){
 
 function confirmarPedido(){
 
-    let pra = document.getElementById("prato");
-
-    let beb = document.getElementById("bebida");
-
-    let sob = document.getElementById("sobremesa");
-
-    let preco1 = document.getElementById("1preco");
-
-    let preco2 = document.getElementById("2preco");
-
-    let preco3 = document.getElementById("3preco");
-
     if( pratoEscolhido !== ""){
 
         if( bebidaEscolhida !== ""){
@@ -175,18 +163,6 @@ function confirmarPedido(){
                 preco3 = parseFloat(sobremesaPreco).toFixed(2);
 
                 let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
-
-                document.getElementById("prato").innerText = pedPrato;
-
-                document.getElementById("bebida").innerText = pedBebida;
-
-                document.getElementById("sobremesa").innerText = pedSobre;
-
-                document.getElementById("1preco").innerText = preco1;
-
-                document.getElementById("2preco").innerText = preco2;
-
-                document.getElementById("3preco").innerText = preco3;
 
                 let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
