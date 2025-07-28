@@ -106,6 +106,7 @@ function escolhido(){
         fecharPedido.classList.add("esconder");
 
     }
+    
 }
 
 function selecionaFecharPedido(){
@@ -164,6 +165,14 @@ function confirmarPedido(){
 
                 let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
 
+                document.getElementById("prato").innerHTML = pedPrato;   document.getElementById("1preco").innerHTML = `R$ ${preco1}`;    
+
+                document.getElementById("bebida").innerHTML =  pedBebida; document.getElementById("2preco").innerHTML = `R$ ${preco2}`;                  
+
+                document.getElementById("sobremesa").innerHTML = pedSobre;  document.getElementById("3preco").innerHTML = `R$ ${preco3}`;               
+
+                document.getElementById("total").innerHTML = `total: R$ ${total}`;
+
                 let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
                 ${pedPrato}: ${preco1}
@@ -174,7 +183,7 @@ function confirmarPedido(){
 
                 Total: R$ ${total.replace(".", ",")}`;
 
-               let link =  encodeURIComponent(envioDoPedido);
+                let link =  encodeURIComponent(envioDoPedido);
 
                 window.open(`https://wa.me/${558487888273}?text=${link}`);
 
