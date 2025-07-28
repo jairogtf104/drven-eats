@@ -115,6 +115,8 @@ function selecionaFecharPedido(){
 
     pedido();
 
+    resumo()
+
 }
 
 function cancelaPedido(){
@@ -131,7 +133,8 @@ function cancelaPedido(){
 
 }
 
-function confirmarPedido(){
+
+function resumo(){
 
     if( pratoEscolhido !== ""){
 
@@ -173,6 +176,57 @@ function confirmarPedido(){
 
                 document.getElementById("total").innerHTML = `total: R$ ${total}`;
 
+
+            }
+
+        }
+
+    }
+
+}
+
+function chamaFuncao(){
+
+    selecionaFecharPedido();
+
+    resumo();
+
+}
+
+function confirmarPedido(){
+
+    if( pratoEscolhido !== ""){
+
+        if( bebidaEscolhida !== ""){
+
+            if(sobreEscolhida !== ""){
+
+                let prato = document.querySelector(".comida .escolhido");
+
+                let bebida = document.querySelector(".bebida .escolhido");
+
+                let sobremesa = document.querySelector(".sobremesa .escolhido");
+        
+                pedPrato = prato.querySelector("h1").innerText;
+
+                pedBebida = bebida.querySelector("h1").innerText;
+
+                pedSobre = sobremesa.querySelector("h1").innerText;
+
+                pratoPreco = prato.querySelector("h2").innerText;
+
+                bebidaPreco = bebida.querySelector("h2").innerText;
+
+                sobremesaPreco = sobremesa.querySelector("h2").innerText;
+
+                preco1 = parseFloat(pratoPreco).toFixed(2);
+
+                preco2 = parseFloat(bebidaPreco).toFixed(2);
+
+                preco3 = parseFloat(sobremesaPreco).toFixed(2);
+
+                let total = (parseFloat(pratoPreco) + parseFloat(bebidaPreco) + parseFloat(sobremesaPreco)).toFixed(2);
+
                 let envioDoPedido = `Ola, gostaria de fazer o pedido:
                 
                 ${pedPrato}: ${preco1}
@@ -192,13 +246,5 @@ function confirmarPedido(){
         }
 
     }
-
-}
-
-function chamaFuncao(){
-
-    selecionaFecharPedido();
-
-    confirmarPedido();
 
 }
